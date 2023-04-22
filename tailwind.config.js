@@ -1,11 +1,15 @@
  
 module.exports = {
+  darkMode: 'class',
+  darkMode: 'media',
+ 
   content: [
 
     './src/**/*.{vue,vuex,jsx,html,js}',
     './src/views/**/*.{vue,vuex,jsx,html,js}',
     './src/components/**/*.{vue,vuex,jsx,html,js}',
-    "./node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx}"
+    "./node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx}",
+    
   ],
   theme: {
     extend: {
@@ -13,7 +17,8 @@ module.exports = {
   }
 },
   plugins: [ 
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('flowbite-typography'),
   ],
 }
 
