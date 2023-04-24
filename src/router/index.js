@@ -9,25 +9,25 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home 
-    },
-    {
-      path: '/articles',
-      name: 'Articles',
-      component: () => import('../views/Articles.vue')
+      name: 'Home',
+      component: () => import(/*webpackChunkName: "Home" */ '../views/index.vue')
     },
     {
       path: '/contact',
       name: 'Contact',
-      component: () => import('../views/Contact.vue')
+      component: () => import(/*webpackChunkName: "Contact" */ '../views/Contact.vue')
     },
     {
       path: '/about',
-      name: 'about',
-      component: () => import(/*webpackChunkName: "about" */ '../views/About.vue')
+      name: 'About',
+      component: () => import(/*webpackChunkName: "About" */ '../views/About.vue')
     },
-     
+    {
+      path: '/articles',
+      name: 'Articles',
+      component: () => import(/*webpackChunkName: "Articles" */ '../views/Articles.vue')
+    },
+    
     
   ]
 })

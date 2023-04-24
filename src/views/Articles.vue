@@ -3,6 +3,7 @@
 
         export default{
             name: "Articles", 
+            
              components: {
                 Article,
               },
